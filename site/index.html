@@ -28,12 +28,13 @@
         .paragraph {
             text-align: center;
             font-size: 25px;
+            line-height: 1.5;
         }
 
         .image {
             margin: 0 auto;
             display: block;
-            width: 400px;
+            width: 350px;
         }
 
         .flex {
@@ -41,6 +42,28 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%)
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .list li {
+            margin: 0 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .link:hover {
+            text-decoration: underline;
         }
 
         @keyframes animate {
@@ -62,7 +85,12 @@
 <body>
     <div class="flex">
         <h1 class="title">Доброго времени суток</h1>
-        <p class="paragraph">Поставьте пятерочку :)</p>
+        <p class="paragraph">Вы попали на сайт про домашних питомцев. Приятного времяперепровождения :)</p>
+        <ul class="list">
+            <li><a href="./test_page1.html" class="link">Котики</a></li>
+            <li><a href="./test_page2.html" class="link">Собачки</a></li>
+            <li><a href="./test_page3.html" class="link">Попугаи</a></li>
+        </ul>
         <img src="./b8dded3b8b702b494ea8328e5526f25c.jpg" alt="" class="image">
     </div>
 </body>
